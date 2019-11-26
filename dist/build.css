@@ -137,14 +137,18 @@ hr.style1 {
       align-items: center;
       justify-content: space-between; }
       .weather__down__prevision__element {
-        box-sizing: content-box;
         align-items: center;
-        padding: 2%; }
+        padding: 10px;
+        border: 1px solid white;
+        transition: background-color;
+        transition: border;
+        transition-duration: 0.5s;
+        transition-timing-function: linear; }
         .weather__down__prevision__element span {
           font-weight: bold; }
         .weather__down__prevision__element img {
           height: auto;
-          width: 60%; }
+          width: 100%; }
         .weather__down__prevision__element:hover {
           border: 1px solid #9FB4B1;
           background-color: #f2f2f2; }
@@ -203,7 +207,15 @@ hr.style1 {
       margin-top: 10%;
       display: flex; }
       .weather__down__prevision__element {
-        width: 20%; } }
+        align-items: center;
+        width: 20%;
+        padding: 2%; }
+        .weather__down__prevision__element img {
+          height: auto;
+          width: 70%; }
+        .weather__down__prevision__element:hover {
+          border: 1px solid #9FB4B1;
+          background-color: #f2f2f2; } }
 
 
 /*# sourceMappingURL=build.css.map*/

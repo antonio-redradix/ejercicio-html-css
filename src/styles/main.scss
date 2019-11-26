@@ -108,16 +108,22 @@ hr.style1{
 			align-content: space-around;
 			align-items: center;
 			justify-content: space-between;
+
 			&__element{
-				box-sizing: content-box;
 				align-items: center;
-				padding: 2%;
-				& span {
+				padding: 10px;
+				border: 1px solid white;
+
+				transition: background-color;
+				transition: border;
+  				transition-duration: 0.5s;
+  				transition-timing-function: linear;
+				span {
 					font-weight: bold;
 				}
-				& img{
+				img{
 					height: auto;
-					width: 60%
+					width: 100%;
 				}
 				&:hover{
 					border: 1px solid #9FB4B1;
@@ -193,7 +199,17 @@ hr.style1{
 			display: flex;
 			&__prevision{
 				&__element{
- 					width: 20%;
+					align-items: center;
+					width: 20%;
+					padding: 2%;
+					& img{
+						height: auto;
+						width: 70%;
+					}
+					&:hover{
+						border: 1px solid #9FB4B1;
+						background-color: #f2f2f2;
+					}
 				}
 			}
 		}
