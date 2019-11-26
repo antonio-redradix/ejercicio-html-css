@@ -1,0 +1,247 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #8d8d8d;
+  line-height: 1.4rem; }
+
+.separator {
+  display: none; }
+
+.widget {
+  background-color: white;
+  width: 60vw;
+  min-height: 50vh;
+  border: 1px solid #d3d0d0;
+  border-radius: 10px;
+  padding: 25px 25px; }
+
+.dayInfo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 65%; }
+  .dayInfo__main {
+    width: 60%;
+    height: 100%; }
+    .dayInfo__main--top {
+      width: 100%;
+      height: 50%; }
+    .dayInfo__main--bottom {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      height: 50%;
+      color: black; }
+      .dayInfo__main--bottom--left {
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        height: 100%; }
+        .dayInfo__main--bottom--left__img {
+          width: 80%;
+          height: 80%; }
+      .dayInfo__main--bottom--right {
+        display: flex;
+        align-items: flex-start;
+        width: 70%;
+        height: 100%; }
+        .dayInfo__main--bottom--right__number {
+          transform-origin: 100% 50%;
+          font-size: 4rem;
+          font-weight: 500;
+          line-height: 3rem; }
+        .dayInfo__main--bottom--right__symbol {
+          font-size: 1.2rem;
+          text-decoration: none;
+          letter-spacing: 0.1rem; }
+    .dayInfo__main__title {
+      font-size: 1.8rem;
+      padding-bottom: 7px; }
+    .dayInfo__main__text {
+      font-size: 1.1rem; }
+  .dayInfo__secundary {
+    width: 40%;
+    height: 100%; }
+    .dayInfo__secundary--top {
+      width: 100%;
+      height: 35%; }
+    .dayInfo__secundary--bottom {
+      width: 100%;
+      height: 65%; }
+    .dayInfo__secundary__table {
+      width: 100%;
+      height: 15%;
+      background-color: #f5f3f3;
+      border: 1px solid #d3d0d0;
+      text-align: center;
+      margin: 20px 0; }
+      .dayInfo__secundary__table__elem {
+        width: calc(100% / 3);
+        color: #4a4a4a;
+        font-weight: bold;
+        font-size: 0.7rem;
+        padding: 3px 0; }
+        .dayInfo__secundary__table__elem:hover {
+          box-shadow: 0 0 2px 2px #a09a9a inset;
+          background-color: #d6d3d3;
+          cursor: pointer; }
+      .dayInfo__secundary__table :nth-child(2) {
+        border-left: 1px solid #d3d0d0;
+        border-right: 1px solid #d3d0d0; }
+
+.weekInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 7%;
+  width: 100%;
+  height: 35%; }
+  .weekInfo__dayBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 70px;
+    height: 100%;
+    padding: 5px; }
+    .weekInfo__dayBox__img {
+      width: 80%;
+      height: auto; }
+    .weekInfo__dayBox__temp--max {
+      color: #8d8d8d; }
+    .weekInfo__dayBox__temp--min {
+      color: #d3d0d0; }
+    .weekInfo__dayBox:hover {
+      border: 1px solid rgba(128, 128, 128, 0.603);
+      border-radius: 2px;
+      background-color: rgba(161, 161, 161, 0.11);
+      cursor: pointer; }
+
+@media only screen and (max-width: 480px) {
+  body {
+    box-sizing: border-box; }
+  .separator {
+    display: block;
+    width: 100%; }
+    .separator--top {
+      border: 0.5px solid #8d8d8d; }
+    .separator--bottom {
+      border: 1px solid #d3d0d0; }
+  .widget {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    border-radius: 0px; }
+  .dayInfo {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50%; }
+    .dayInfo__main {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .dayInfo__main--top {
+        width: 40%; }
+      .dayInfo__main--bottom {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 20px; }
+        .dayInfo__main--bottom--left {
+          height: 150%; }
+          .dayInfo__main--bottom--left__img {
+            width: auto;
+            height: 100%; }
+    .dayInfo__secundary {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 100%;
+      height: 50%; }
+      .dayInfo__secundary--top {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      .dayInfo__secundary--bottom {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      .dayInfo__secundary__table {
+        width: 60%;
+        margin: 0; }
+  .weekInfo {
+    width: 100%;
+    height: 50%; }
+    .weekInfo__dayBox {
+      align-content: center;
+      height: auto; } }
+
+
+/*# sourceMappingURL=build.css.map*/

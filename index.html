@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather APIS</title>
+
+    <link rel="stylesheet" href="./dist/build.css">
+</head>
+<body>
+    <!-- Widget -->
+    <div class="widget">
+        <!-- Main body of the widget (day info) -->
+        <div class="dayInfo">
+            <div class="dayInfo__main">
+                <div class="dayInfo__main--top">
+                    <h1 class="dayInfo__main__title">Madrid</h1>
+                    <p class="dayInfo__main__text">Sunday 08:00</p>
+                    <p class="dayInfo__main__text">Mostly Cloudy</p>
+                </div>
+                <div class="dayInfo__main--bottom">
+                    <div class="dayInfo__main--bottom--left">
+                        <img class="dayInfo__main--bottom--left__img" src="./src/img/partly_cloudy.png" alt="partly_cloudy">
+                    </div>
+                    
+                    <div class="dayInfo__main--bottom--right">
+                        <span class="dayInfo__main--bottom--right__number">13</span>
+                        <span class="dayInfo__main--bottom--right__symbol">ºC | </span>
+                        <a class="dayInfo__main--bottom--right__symbol" href="#" target="_blank" rel="noopener noreferrer">ºF</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <hr class="separator separator--top">
+            
+            <div class="dayInfo__secundary">
+                <div class="dayInfo__secundary--top">
+                    <p class="dayInfo__main__text">Precipitation: 6%</p>
+                    <p class="dayInfo__main__text">Humidity: 83%</p>
+                    <p class="dayInfo__main__text">Wind: 31 km/h</p>
+                </div>
+                <div class="dayInfo__secundary--bottom">
+                    <table class="dayInfo__secundary__table">
+                        <tr>
+                            <td class="dayInfo__secundary__table__elem">Temperature</td>
+                            <td class="dayInfo__secundary__table__elem">Precipitation</td>
+                            <td class="dayInfo__secundary__table__elem">Wind</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <hr class="separator separator--bottom">
+
+        <!-- Secondary part of the widget (other days) -->
+        <div class="weekInfo">
+            <!-- Day1 -->
+            <div class="weekInfo__dayBox">
+                <span class="weekInfo__dayBox__title">Sun</span>
+                <img class="weekInfo__dayBox__img" src="./src/img/partly_cloudy.png" alt="partly_cloudy">
+                <div class="weekInfo__dayBox__temp">
+                    <span class="weekInfo__dayBox__temp--max">16º</span>
+                    <span class="weekInfo__dayBox__temp--min">11º</span>
+                </div>
+            </div>
+            <!-- Day2 -->
+            <div class="weekInfo__dayBox">
+                <span class="weekInfo__dayBox__title">Mon</span>
+                <img class="weekInfo__dayBox__img" src="./src/img/rain_s_cloudy.png" alt="rain_s_cloudy">
+                <span class="weekInfo__dayBox__temp--max"></span>
+                <div class="weekInfo__dayBox__temp">
+                    <span class="weekInfo__dayBox__temp--max">16º</span>
+                    <span class="weekInfo__dayBox__temp--min">7º</span>
+                </div>
+            </div>
+            <!-- Day3 -->
+            <div class="weekInfo__dayBox">
+                <span class="weekInfo__dayBox__title">Tue</span>
+                <img class="weekInfo__dayBox__img" src="./src/img/partly_cloudy.png" alt="partly_cloudy">
+                <span class="weekInfo__dayBox__temp--max"></span>
+                <div class="weekInfo__dayBox__temp">
+                    <span class="weekInfo__dayBox__temp--max">14º</span>
+                    <span class="weekInfo__dayBox__temp--min">5º</span>
+                </div>
+            </div>
+            <!-- Day4 -->
+            <div class="weekInfo__dayBox">
+                <span class="weekInfo__dayBox__title">Wed</span>
+                <img class="weekInfo__dayBox__img" src="./src/img/partly_cloudy.png" alt="partly_cloudy">
+                <span class="weekInfo__dayBox__temp--max"></span>
+                <div class="weekInfo__dayBox__temp">
+                    <span class="weekInfo__dayBox__temp--max">14º</span>
+                    <span class="weekInfo__dayBox__temp--min">51</span>
+                </div>
+            </div>
+            <!-- Day5 -->
+            <div class="weekInfo__dayBox">
+                <span class="weekInfo__dayBox__title">Thu</span>
+                <img class="weekInfo__dayBox__img" src="./src/img/rain_s_cloudy.png" alt="rain_s_cloudy">
+                <span class="weekInfo__dayBox__temp--max"></span>
+                <div class="weekInfo__dayBox__temp">
+                    <span class="weekInfo__dayBox__temp--max">14º</span>
+                    <span class="weekInfo__dayBox__temp--min">3º</span>
+                </div>
+            </div>
+            <!-- Day6 -->
+            <div class="weekInfo__dayBox">
+                <span class="weekInfo__dayBox__title">Fri</span>
+                <img class="weekInfo__dayBox__img" src="./src/img/partly_cloudy.png" alt="partly_cloudy">
+                <span class="weekInfo__dayBox__temp--max"></span>
+                <div class="weekInfo__dayBox__temp">
+                    <span class="weekInfo__dayBox__temp--max">12º</span>
+                    <span class="weekInfo__dayBox__temp--min">4º</span>
+                </div>
+            </div>
+            <!-- Day7 -->
+            <div class="weekInfo__dayBox">
+                <span class="weekInfo__dayBox__title">Sat</span>
+                <img class="weekInfo__dayBox__img" src="./src/img/partly_cloudy.png" alt="partly_cloudy">
+                <span class="weekInfo__dayBox__temp--max"></span>
+                <div class="weekInfo__dayBox__temp">
+                    <span class="weekInfo__dayBox__temp--max">13º</span>
+                    <span class="weekInfo__dayBox__temp--min">6º</span>
+                </div>
+            </div>
+            <!-- Day8 -->
+            <div class="weekInfo__dayBox">
+                <span class="weekInfo__dayBox__title">Sun</span>
+                <img class="weekInfo__dayBox__img" src="./src/img/rain_s_cloudy.png" alt="rain_s_cloudy">
+                <span class="weekInfo__dayBox__temp--max"></span>
+                <div class="weekInfo__dayBox__temp">
+                    <span class="weekInfo__dayBox__temp--max">12º</span>
+                    <span class="weekInfo__dayBox__temp--min">4º</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./dist/build.js"></script>
+</body>
+</html>
