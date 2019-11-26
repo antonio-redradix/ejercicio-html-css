@@ -22,3 +22,4 @@ La evaluación se hará teniendo  en cuenta la cantidad de requisitos completado
 - Las tarjetas de la parte inferior deberán aplicar un efecto al pasar el ratón por encima (el efecto visible en la primera tarjeta)
 - Este efecto debe aplicarse con una transición y no mediante un cambio brusco de estilos
 - Se valorará positivamente el uso del modelo Flexbox
+- La implementación debe ser cross-browser
