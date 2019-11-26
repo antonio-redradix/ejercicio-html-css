@@ -1,0 +1,169 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.section {
+  display: flex;
+  flex-flow: row wrap;
+  border: solid 1px #DFE1E5;
+  border-radius: 8px;
+  width: 635px;
+  height: 355px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .section__actualWeather {
+    width: 55%;
+    height: auto;
+    padding: 20px 15px; }
+  .section__actualInfo {
+    width: 35%;
+    height: auto;
+    padding-top: 20px; }
+    .section__actualInfo__buttons {
+      display: flex; }
+  .section__futureWeather {
+    width: 100%;
+    height: 34%;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 15px 0px; }
+    .section__futureWeather__item {
+      width: 65px;
+      height: 100px;
+      box-sizing: border-box;
+      transition: 2s; }
+      .section__futureWeather__item:hover {
+        border: 1px solid #DFE1E5;
+        background-color: #FCFCFC; }
+  .section__text, .section__text--city, .section__text--info, .section__text--scale, .section__text--link, .section__text--temperature, .section__text--item, .section__text--item--bold {
+    font-family: Arial;
+    color: #878797;
+    line-height: 23px; }
+    .section__text--city {
+      font-size: 25px;
+      color: #878797;
+      padding-bottom: 6px; }
+    .section__text--info, .section__text--scale, .section__text--link {
+      font-size: 16px;
+      color: #878787; }
+    .section__text--temperature {
+      font-size: 60px;
+      color: black;
+      padding-top: 12px; }
+    .section__text--scale {
+      color: black;
+      padding-left: 5px; }
+    .section__text--link {
+      color: blue;
+      text-decoration: none; }
+    .section__text--item, .section__text--item--bold {
+      font-size: 14px;
+      text-align: center;
+      padding: 4px; }
+      .section__text--item--bold {
+        font-weight: bold; }
+    .section__text--button {
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: bold;
+      border: 1px solid #D8D8D8;
+      background-color: #F2F2F2;
+      padding: 6px 10px;
+      margin-top: 20px; }
+      .section__text--button:hover {
+        background-color: #ECECEC; }
+  .section__image {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 25px; }
+    .section__image--mainImage {
+      background-image: url(632330d8119228cc12e014dc22acc861.png);
+      background-position: center;
+      width: 50px;
+      height: 50px; }
+    .section__image--itemImage, .section__image--itemImage--partlyCloudy, .section__image--itemImage--rain {
+      background-position: center;
+      width: 75%;
+      height: 35px;
+      margin: auto; }
+      .section__image--itemImage--partlyCloudy {
+        background-image: url(632330d8119228cc12e014dc22acc861.png); }
+      .section__image--itemImage--rain {
+        background-image: url(49c8f90990c0f0853888be5c2cc153b1.png); }
+
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+  .sectionResp {
+    flex-flow: column;
+    border: 0px;
+    width: 100%;
+    height: 100vh;
+    padding: 0px 20px; }
+  .centerResp {
+    padding-left: 60px; }
+  .section__actualWeather {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+    border-bottom: 1px solid #959595; }
+  .section__image {
+    justify-content: center; }
+  .section__actualInfo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid #959595;
+    padding-bottom: 25px; }
+  .section__futureWeather {
+    flex-flow: row wrap;
+    margin-top: 30px;
+    width: auto;
+    padding-top: 0px; } }
+
+
+/*# sourceMappingURL=build.css.map*/
