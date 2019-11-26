@@ -1,0 +1,187 @@
+@import 'reset';
+
+hr.style1{
+	border-top: 1px solid #8c8b8b;
+	margin: 0px;
+	margin-top: 5%;
+	with: 100%;
+}
+
+.weather{
+	margin-top: 5%;
+	margin-left: 10%;
+	height: 400px;
+	width: 700px;
+	font-size: 18px;
+	color: #929292;
+	font-family: Arial;
+	border: 2px solid #9FB4B1;
+	border-radius: 5px;
+	display: flex;
+	flex-flow: row wrap;
+	&__up{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+		&__mainInfo{
+			height: 60%;
+			width: 50%;
+			box-sizing: content-box;
+			&__title{
+				width: 50%;
+				margin-top:5%;
+				margin-left:5%;
+				&--city{
+					font-size: 25px;
+					font-weight: bold;
+				}
+			}
+			&__temp{
+				display:flex;
+				align-content: space-around;
+				align-items: center;
+				box-sizing: content-box;
+				margin-top: 10%;
+				margin-left: 5%;
+				width: 100%;
+				&--todayIcon{
+					display:inline-block;
+					width: 20%;
+					& img {
+						height: auto;
+						width:100%;
+					}
+				}
+				&--todayGrades{
+					display:flex;
+					width: 80%;
+					font-size: 70px;
+					color: black;
+					& p{
+						display:inline;
+					}
+					& span{
+						font-size: 20px;
+					}
+				}
+			}
+		}
+		&__secondaryInfo{
+			height: 60%;
+			width: 50%;
+			box-sizing: content-box;
+			&__data{
+				margin-top: 5%;
+				& p{
+					margin-top:3px;
+				}
+			}
+			&__infoButtons{
+				margin-top: 5%;
+				display:flex;
+				width: 90%;
+				& button{
+					width: 100%;
+					background-color: #ECECEC;
+					padding: 2%;
+					border: 1px solid #9FB4B1;
+					&:hover{
+						background-color: #dfdfdf;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+	&__down{
+		height: 40%;
+		width: 100%;
+		display: flex;
+		&__prevision{
+			width: 100%;
+			margin: 2%;
+			text-align: center;
+
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+
+			align-content: space-around;
+			align-items: center;
+			justify-content: space-between;
+			&__element{
+				box-sizing: content-box;
+				align-items: center;
+				
+				& span {
+					font-weight: bold;
+				}
+				& img{
+					height: auto;
+					width: 100%
+				}
+				&:hover{
+					box-sizing: border-box;
+					border: 1px solid #9FB4B1;
+					border-radius: 5px;
+					background-color: #f2f2f2;
+					padding: 1%;
+				}
+				
+			}
+
+		}
+	}
+}
+
+/*
+	IPHONE 6/7/8 NORMAL
+*/
+@media only screen and (max-width: 375px) {
+	.weather{	
+		margin-top: 0%;
+		margin-left: 0%;
+		width: 100vw;
+		height: auto;
+		border: 0px solid #9FB4B1;
+		padding: 10%;
+
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		&__up{
+			display: flex;
+			flex-direction: column;
+			margin: auto;
+			justify-content: center;
+			&__mainInfo{
+				width: 70%;
+				margin: auto;
+				&__title{
+					margin: auto;
+				}
+			}
+			&__secondaryInfo{
+				width: 70%;
+				margin: auto;
+				&__data{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
+			}
+		}
+		&__down{
+			margin-top: 10%;
+			display: flex;
+			&__prevision{
+
+				&__element{
+ 					width: 15%;
+ 					margin: 4%;
+				}
+			}
+		}
+	}
+}

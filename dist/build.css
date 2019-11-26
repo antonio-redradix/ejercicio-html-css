@@ -1,0 +1,193 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr.style1 {
+  border-top: 1px solid #8c8b8b;
+  margin: 0px;
+  margin-top: 5%;
+  with: 100%; }
+
+.weather {
+  margin-top: 5%;
+  margin-left: 10%;
+  height: 400px;
+  width: 700px;
+  font-size: 18px;
+  color: #929292;
+  font-family: Arial;
+  border: 2px solid #9FB4B1;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row wrap; }
+  .weather__up {
+    display: flex;
+    flex-direction: row;
+    width: 100%; }
+    .weather__up__mainInfo {
+      height: 60%;
+      width: 50%;
+      box-sizing: content-box; }
+      .weather__up__mainInfo__title {
+        width: 50%;
+        margin-top: 5%;
+        margin-left: 5%; }
+        .weather__up__mainInfo__title--city {
+          font-size: 25px;
+          font-weight: bold; }
+      .weather__up__mainInfo__temp {
+        display: flex;
+        align-content: space-around;
+        align-items: center;
+        box-sizing: content-box;
+        margin-top: 10%;
+        margin-left: 5%;
+        width: 100%; }
+        .weather__up__mainInfo__temp--todayIcon {
+          display: inline-block;
+          width: 20%; }
+          .weather__up__mainInfo__temp--todayIcon img {
+            height: auto;
+            width: 100%; }
+        .weather__up__mainInfo__temp--todayGrades {
+          display: flex;
+          width: 80%;
+          font-size: 70px;
+          color: black; }
+          .weather__up__mainInfo__temp--todayGrades p {
+            display: inline; }
+          .weather__up__mainInfo__temp--todayGrades span {
+            font-size: 20px; }
+    .weather__up__secondaryInfo {
+      height: 60%;
+      width: 50%;
+      box-sizing: content-box; }
+      .weather__up__secondaryInfo__data {
+        margin-top: 5%; }
+        .weather__up__secondaryInfo__data p {
+          margin-top: 3px; }
+      .weather__up__secondaryInfo__infoButtons {
+        margin-top: 5%;
+        display: flex;
+        width: 90%; }
+        .weather__up__secondaryInfo__infoButtons button {
+          width: 100%;
+          background-color: #ECECEC;
+          padding: 2%;
+          border: 1px solid #9FB4B1; }
+          .weather__up__secondaryInfo__infoButtons button:hover {
+            background-color: #dfdfdf;
+            font-weight: bold; }
+  .weather__down {
+    height: 40%;
+    width: 100%;
+    display: flex; }
+    .weather__down__prevision {
+      width: 100%;
+      margin: 2%;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: space-around;
+      align-items: center;
+      justify-content: space-between; }
+      .weather__down__prevision__element {
+        box-sizing: content-box;
+        align-items: center; }
+        .weather__down__prevision__element span {
+          font-weight: bold; }
+        .weather__down__prevision__element img {
+          height: auto;
+          width: 100%; }
+        .weather__down__prevision__element:hover {
+          box-sizing: border-box;
+          border: 1px solid #9FB4B1;
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 1%; }
+
+/*
+	IPHONE 6/7/8 NORMAL
+*/
+@media only screen and (max-width: 375px) {
+  .weather {
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 100vw;
+    height: auto;
+    border: 0px solid #9FB4B1;
+    padding: 10%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; }
+    .weather__up {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      justify-content: center; }
+      .weather__up__mainInfo {
+        width: 70%;
+        margin: auto; }
+        .weather__up__mainInfo__title {
+          margin: auto; }
+      .weather__up__secondaryInfo {
+        width: 70%;
+        margin: auto; }
+        .weather__up__secondaryInfo__data {
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+    .weather__down {
+      margin-top: 10%;
+      display: flex; }
+      .weather__down__prevision__element {
+        width: 15%;
+        margin: 4%; } }
+
+
+/*# sourceMappingURL=build.css.map*/
