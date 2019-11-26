@@ -1,0 +1,205 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.leftcolumn {
+  width: 450px;
+  height: 250px;
+  display: inline-block;
+  vertical-align: top; }
+
+.rightcolumn {
+  width: 400px;
+  height: 250px;
+  display: inline-block;
+  vertical-align: top; }
+
+.dailyweathercontainer {
+  width: 850px;
+  height: 130px;
+  display: flex;
+  justify-content: center; }
+
+.dailyweatherinfo {
+  margin: 5px;
+  width: 11%;
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 2s;
+  border: 2px solid white; }
+  .dailyweatherinfo__img {
+    width: 60px;
+    height: 60px;
+    align-self: center; }
+  .dailyweatherinfo__text {
+    font-family: Arial;
+    color: #9F9F9F;
+    font-size: 14px;
+    font-weight: bold;
+    justify-content: center;
+    width: 92px;
+    height: 20px;
+    padding-left: 30px;
+    margin-bottom: 2px;
+    display: inline-block; }
+    .dailyweatherinfo__text--black {
+      font-family: Arial;
+      display: inline-block;
+      color: #D9D9D9; }
+  .dailyweatherinfo:hover {
+    background-color: #FCFCFC;
+    border-color: gray; }
+
+.Todaysweather {
+  margin-top: 20px;
+  margin-left: 20px; }
+  .Todaysweather__text {
+    font-family: Arial;
+    color: #88878B;
+    font-size: 20px; }
+    .Todaysweather__text--big {
+      font-size: 50px;
+      display: inline-block; }
+
+.Nowinfo {
+  margin-left: 20px;
+  margin-top: 20px; }
+  .Nowinfo__img {
+    width: 80px;
+    height: 75px; }
+  .Nowinfo__text {
+    font-family: Arial;
+    display: inline-block;
+    font-size: 70px; }
+    .Nowinfo__text--sub {
+      font-family: Arial;
+      vertical-align: text-top;
+      font-size: 20px; }
+
+.Todaysprediction {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px; }
+  .Todaysprediction__text {
+    font-family: Arial;
+    color: #88878B;
+    font-size: 20px; }
+
+.Buttongroup {
+  margin-left: 20px; }
+  .Buttongroup__button {
+    font-family: Arial;
+    border: 1px solid gray;
+    color: black;
+    background-color: #EBEBEB;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+    font-weight: bold; }
+    .Buttongroup__button :not(:last-child) {
+      border-right: none; }
+
+#border {
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 25px;
+  border: 2px solid #EFF0F2;
+  padding: 20px;
+  width: 860px; }
+
+@media screen and (width: 375px) {
+  body {
+    height: 100vh;
+    width: 100vw; }
+  .leftcolumn {
+    width: 375px;
+    height: 28vh;
+    padding-top: 10%;
+    margin-bottom: 3%;
+    border-bottom: 2px solid #BEBEBE; }
+  #border {
+    width: 375px;
+    border: 0px;
+    margin: 0px;
+    padding: 0px; }
+  .dailyweathercontainer {
+    width: 375px;
+    height: 30%;
+    flex-wrap: wrap; }
+  .rightcolumn {
+    height: 15%;
+    width: 375px;
+    border-bottom: 2px solid #BEBEBE;
+    margin-bottom: 10%; }
+  .Todaysprediction {
+    width: 375px;
+    margin: 0px;
+    margin-bottom: 6%;
+    display: flex;
+    flex-direction: column; }
+    .Todaysprediction__text {
+      align-self: center; }
+  .Nowinfo {
+    display: flex;
+    justify-content: center; }
+  .Todaysweather {
+    display: flex;
+    flex-direction: column; }
+    .Todaysweather__text {
+      align-self: center; }
+  .Buttongroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5%; }
+    .Buttongroup__button {
+      padding: 10px 5%; }
+  .dailyweatherinfo {
+    width: 20%; } }
+
+
+/*# sourceMappingURL=build.css.map*/
