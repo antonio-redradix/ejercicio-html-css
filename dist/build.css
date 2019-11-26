@@ -80,7 +80,7 @@ table {
         padding-top: 15px; } }
     .weatherBoard__NextDays__DayCard {
       width: 75px;
-      height: 90px;
+      height: 100px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -109,8 +109,6 @@ table {
     flex-direction: row; } }
 
 .SingleDayWeather__Text {
-  width: 100%;
-  height: 40%;
   color: #878787;
   display: flex;
   flex-direction: column;
@@ -141,7 +139,7 @@ table {
 
 @media only screen and (min-width: 600px) {
   .SingleDayWeather__DayInfo {
-    width: 60%;
+    width: 55%;
     height: 100%; } }
 
 .SingleDayWeather__DayInfo__Temperature {
@@ -165,7 +163,7 @@ table {
       align-items: center; } }
   @media only screen and (min-width: 600px) {
     .SingleDayWeather__WeatherInfo {
-      width: 40%;
+      width: 45%;
       height: 100%; } }
   .SingleDayWeather__WeatherInfo__Options {
     display: flex;
@@ -175,13 +173,16 @@ table {
       .SingleDayWeather__WeatherInfo__Options {
         height: 50px; } }
     .SingleDayWeather__WeatherInfo__Options input {
-      border-radius: 0px;
+      border-radius: 2px;
+      border: #bdb8b8 0.5px solid;
       font-weight: bold;
-      height: 30px;
+      height: 35px;
+      padding-left: 10px;
+      padding-right: 10px;
       background-color: #FCFCFC; }
     .SingleDayWeather__WeatherInfo__Options input:focus {
       background-color: #EBEBEB;
-      border: #bdb8b8 0.5px solid; }
+      outline: none; }
 
 .Degrees {
   font-size: 65px; }
