@@ -107,11 +107,10 @@ table {
     .mainContainer__section1__container2 {
       background-color: white;
       height: 170px;
-      width: 250px;
+      width: 245px;
       display: inline-block;
       position: absolute;
-      top: 18%;
-      left: 57%; }
+      margin-left: 5%; }
       .mainContainer__section1__container2__text {
         margin-top: 10px;
         line-height: 1.2; }
