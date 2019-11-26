@@ -11,6 +11,7 @@ $standard-black: #4a4a4a;
   height: $height;
 }
 
+// Style
 * {
   box-sizing: border-box;
 }
@@ -37,15 +38,13 @@ body {
   min-height: 50vh;
   border: 1px solid $base-color-gray;
   border-radius: 10px;
-  padding: 25px 25px;
-
+  padding: 20px 20px;
 }
 
 .dayInfo {
-  
+  @include width-height(100%, 65%);
   display: flex;
   flex-direction: row;
-  @include width-height(100%, 65%);
 
   &__main {
     @include width-height(60%, 100%);
@@ -55,16 +54,17 @@ body {
     }
 
     &--bottom {
+      @include width-height(100%, 50%);
       display: flex;
       flex-direction: row;
       align-items: center;
-      @include width-height(100%, 50%);
       color: black;
+      padding-top: 20px;
 
       &--left {
+        @include width-height(30%);
         display: flex;
         justify-content: center;
-        @include width-height(30%);
 
         &__img {
           @include width-height(80%, 80%)
@@ -72,9 +72,9 @@ body {
       }
 
       &--right {
+        @include width-height(70%);
         display: flex;
         align-items: flex-start;
-        @include width-height(70%);
 
         &__number {
           transform-origin: 100% 50%;
@@ -88,7 +88,6 @@ body {
           text-decoration: none;
           letter-spacing: 0.1rem;
         }
-
       }
     }
 
@@ -99,6 +98,7 @@ body {
 
     &__text {
       font-size: 1.1rem;
+      line-height: 1.5  rem;
     }
   }
 
@@ -126,11 +126,20 @@ body {
         font-weight: bold;
         font-size: 0.7rem;
         padding: 3px 0;
+        transition-property: border, background-color;
+        transition-duration: 300ms;
+        transition-timing-function: linear;
+        transition-delay: 0s;
 
         &:hover {
           box-shadow: 0 0 2px 2px rgb(160, 154, 154) inset;
           background-color: rgb(214, 211, 211);
           cursor: pointer;
+        }
+
+        &:visited {
+          box-shadow: 0 0 2px 2px rgb(160, 154, 154) inset;
+          background-color: rgb(214, 211, 211);
         }
       }
 
@@ -139,29 +148,31 @@ body {
         border-right: 1px solid $base-color-gray;
       }
     }
-
   }
 }
 
 .weekInfo {
+  @include width-height(100%, 35%);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 7%;
-  @include width-height(100%, 35%);
 
   &__dayBox {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 70px;
+    width: 75px;
     height: 100%;
     padding: 5px;
-
-    &__title {}
+    border: 1px solid white;
+    transition-property: border, background-color;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+    transition-delay: 0s;
 
     &__img {
       width: 80%;
@@ -176,7 +187,6 @@ body {
 
       &--min {
         color: $base-color-gray;
-        
       }
     }
 
@@ -191,8 +201,11 @@ body {
 
 
 @media only screen and (max-width: 480px) {
+  
   body {
     box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
   }
 
   .separator {
@@ -200,7 +213,7 @@ body {
     width: 100%;
 
     &--top {
-      border: 0.5px solid $base-color-strongGray;
+      border: 0.3px solid $base-color-strongGray;
     }
 
     &--bottom {
@@ -216,12 +229,12 @@ body {
   }
 
   .dayInfo {
+    @include width-height(100%, 50%);
     flex-direction: column;
     align-items: center;
-    @include width-height(100%, 50%);
 
     &__main {
-      @include width-height(100%, 50%);
+      @include width-height(100%, 55%);
       display:flex;
       flex-direction: column;
       justify-content: center;
@@ -229,7 +242,6 @@ body {
 
       &--top {
         @include width-height(35%, 60%);
-        // width: 40%;
       }
 
       &--bottom {
@@ -237,20 +249,18 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        // background-color: red;
-        // width: 100%;
-      
+        padding-top: 0;
 
         &--left {
+          @include width-height(50%);
           display: flex;
           justify-content: flex-end;
+          align-items: center;
           height: 150%;
-          @include width-height(50%);
 
           &__img {
             width: auto;
-            height: 100%;
-            
+            height: 80%;
           }
         }
 
@@ -263,19 +273,17 @@ body {
           &__symbol {
             display: flex;
             align-self: flex-start;
+            font-size: 1rem;
           }
         }
-
       }
-
     }
 
     &__secundary {
+      @include width-height(100%, 45%);
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      @include width-height(100%, 50%);
-      
+      justify-content: space-around; 
 
       &--top {
         @include width-height(100%, auto);
@@ -295,9 +303,7 @@ body {
         width: 80%;
         margin: 0;
       }
-
     }
-    
   }
 
   .weekInfo {
