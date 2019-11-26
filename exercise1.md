@@ -5,10 +5,6 @@ En este ejercicio se evaluará la habilidad del alumno a la hora de maquetar una
 Los alumnos deben realizar el ejercicio clonando este repositorio y partiendo de la plantilla incluida. Cada alumno publicará su solución en una rama que nombrará con el siguiente formato: **[entrega] nombre-apellido1-apellido2**
 
 
-## JIRA
-
-*En el ejercicio final, esta sección será un enlace a JIRA donde los alumnos podrán ver los requerimientos, historias de usuario, etc. relacionadas con el widget*
-
 ## Diseño
 
 ### Diseño desktop
