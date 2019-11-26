@@ -1,0 +1,157 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+
+.widgetapp {
+  border: 1px solid #e1e3e7;
+  border-radius: 10px;
+  width: 600px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 25px 25px 20px; }
+
+.detail {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  font-size: 18px;
+  color: #9C9290; }
+  .detail__main__city {
+    font-size: 30px;
+    color: #878787;
+    margin-bottom: 10px; }
+  .detail__main__time {
+    margin: 3px 0px; }
+  .detail__main__state {
+    margin: 3px 0px; }
+  .detail__main__resume {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px; }
+    .detail__main__resume__icon {
+      width: 70px; }
+    .detail__main__resume__grade {
+      font-size: 60px;
+      color: black; }
+    .detail__main__resume__units--cel {
+      padding-top: 5px; }
+    .detail__main__resume__units--far {
+      text-decoration: none;
+      padding-top: 5px; }
+  .detail__secondary__info > h4 {
+    margin: 5px 0px; }
+  .detail__secondary__btn {
+    margin-top: 30px; }
+    .detail__secondary__btn > button {
+      background-color: #F2F2F2;
+      border: 1px solid #E0E0E0;
+      height: 30px;
+      width: 90px;
+      font-size: 11px;
+      font-weight: bold;
+      cursor: pointer; }
+      .detail__secondary__btn > button:focus, .detail__secondary__btn > button:active {
+        background-color: #E3E3E3;
+        outline: 0px; }
+    .detail__secondary__btn--left {
+      border-radius: 3px 0px 0px 3px; }
+    .detail__secondary__btn--center {
+      margin: -6px; }
+    .detail__secondary__btn--right {
+      border-radius: 0px 3px 3px 0px; }
+
+.week {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  color: #CECECE;
+  text-align: center; }
+  .week__day {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid white;
+    cursor: pointer; }
+    .week__day__temperature {
+      text-align: center; }
+      .week__day__temperature--max {
+        color: #A5A5A5; }
+    .week__day:hover {
+      box-sizing: border-box;
+      border: 1px solid #ECECEC;
+      background-color: #FCFCFC;
+      transition: 1s; }
+
+@media only screen and (max-width: 700px) {
+  .widgetapp {
+    height: auto;
+    text-align: center;
+    border: none; }
+  .detail__main {
+    width: 100%; }
+    .detail__main__resume {
+      justify-content: center; }
+  .detail__secondary {
+    border-width: 1px 0px 1px 0px;
+    border-color: #959595;
+    border-style: solid;
+    padding: 20px 0px;
+    width: 100%; }
+  .week {
+    padding-top: 30px; } }
+
+
+/*# sourceMappingURL=build.css.map*/
