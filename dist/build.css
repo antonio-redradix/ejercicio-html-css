@@ -77,6 +77,7 @@ table {
       width: 65px;
       height: 100px;
       box-sizing: border-box;
+      border: 1px solid white;
       transition: 2s; }
       .section__futureWeather__item:hover {
         border: 1px solid #DFE1E5;
