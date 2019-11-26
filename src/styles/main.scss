@@ -1,0 +1,226 @@
+@import 'reset';
+body{
+    font-family: Arial;
+}
+.main{
+    width: 750px;
+    height: 500px;
+    margin: 100px auto;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    hr{
+        display:none;
+    }
+    &__subbox1{
+        height: 60%;
+        display: flex;
+        &__subbox1{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            &__subbox1{
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+                justify-content: center;
+                &__subbox1{
+                    font-size: 30px;
+                    margin-bottom: 3px;
+                }
+                &__subbox2{
+                    font-size: 20px;
+                }
+                &__subbox3{
+                    font-size: 20px;
+                }
+            }
+            &__subbox2{
+                height: 50%;
+                margin-left: 10px;
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: row;
+                &__photo{
+                    width: 30%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    &__i1{
+                        object-fit: cover;
+                        height: 65%;
+                        width: 85%;
+                    }
+                }
+                &__degrees{
+                    width: 70%;                    
+                    padding-top: 15px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    font-size: 60px;
+                    &__unities{
+                        font-size: 20px;
+                        padding-bottom: 30px;
+                    }
+                }
+            }
+        }
+        &__subbox2{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            &__subbox1{
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-bottom: 10px;
+                &__prec{
+                    font-size: 20px;
+                    height: 15%;
+                    display: flex;
+                }
+                &__hum{
+                    font-size: 20px;
+                    height: 15%;
+                }
+                &__wind{
+                    font-size: 20px;
+                    height: 15%;
+                }
+            }
+            &__subbox2{
+                height: 50%;
+                display: flex;
+                flex-direction: row;
+                &__botonera{
+                    height: 20%;
+                    width: 75%;
+                    &__button{
+                        width: 30%;
+                        height: 100%;
+                        border-radius: 2px;
+                        border: 1px solid gray;
+                        background-color: rgb(232, 235, 234);
+                        
+                    }
+                    &__button--w{
+                        width: 30%;
+                        height: 100%;
+                        border-radius: 2px;
+                        border: 1px solid gray;
+                        background-color: rgb(232, 235, 234);
+                    }
+                }
+            }
+        }
+    }
+    &__subbox2{
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 40%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        &__days{
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            height: 60%;
+            width: 11%;
+            background-color:white;
+            align-items: center;
+            &__day{
+                text-align: center;
+                height: 20%;
+            }
+            &__photo{
+                height: 60%;
+                object-fit: cover;
+            }
+            &__degrees{
+                text-align: center;
+                height: 20%;
+            }
+            &:hover{
+                background-color: rgb(245, 239, 239);
+                border: 1px solid gray;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 375px){
+    .main{
+        width: 100vw;
+        height: 100vh;
+        border: none;
+        margin: 0;
+        hr{
+            display: block;
+            width: 85%
+        }
+        &__subbox1{
+            flex-direction: column;
+            &__subbox1{
+                width: 100%;
+                padding-top: 25px;
+                align-items: center;
+                &__subbox2{
+                    width: 55%;
+                    &__photo{
+                        width: 75%;
+                        align-items: center;
+                    }
+                    &__degrees{
+                        padding-top: 0px;
+                        align-items: center;
+                        &__unities{
+                            padding-bottom: 0px;
+                            font-size: 15px;
+                            width:45px;
+                            padding-bottom: 30px;
+                        }
+                    }
+                }
+            }
+            &__subbox2{
+                width: 100%;
+                height: 100%;
+                &__subbox1{
+                    width: 100%;
+                    align-items: center;
+                    &__prec{
+                        height: 25%;
+                    }
+                    &__hum{
+                        height: 25%;
+                    }
+                    &__wind{
+                        height: 25%;
+                    }
+                }
+                &__subbox2{
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: center;
+                    &__botonera{
+                        width: 80%;
+                        margin-left: 15px;
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+        &__subbox2{
+            flex-wrap: wrap;
+            &__days{
+                height: 50%;
+                width: 25%;
+            }
+        }
+    }
+}

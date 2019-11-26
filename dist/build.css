@@ -1,0 +1,231 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: Arial; }
+
+.main {
+  width: 750px;
+  height: 500px;
+  margin: 100px auto;
+  border: 1px solid black;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column; }
+  .main hr {
+    display: none; }
+  .main__subbox1 {
+    height: 60%;
+    display: flex; }
+    .main__subbox1__subbox1 {
+      width: 50%;
+      display: flex;
+      flex-direction: column; }
+      .main__subbox1__subbox1__subbox1 {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        justify-content: center; }
+        .main__subbox1__subbox1__subbox1__subbox1 {
+          font-size: 30px;
+          margin-bottom: 3px; }
+        .main__subbox1__subbox1__subbox1__subbox2 {
+          font-size: 20px; }
+        .main__subbox1__subbox1__subbox1__subbox3 {
+          font-size: 20px; }
+      .main__subbox1__subbox1__subbox2 {
+        height: 50%;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row; }
+        .main__subbox1__subbox1__subbox2__photo {
+          width: 30%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start; }
+          .main__subbox1__subbox1__subbox2__photo__i1 {
+            -o-object-fit: cover;
+               object-fit: cover;
+            height: 65%;
+            width: 85%; }
+        .main__subbox1__subbox1__subbox2__degrees {
+          width: 70%;
+          padding-top: 15px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          font-size: 60px; }
+          .main__subbox1__subbox1__subbox2__degrees__unities {
+            font-size: 20px;
+            padding-bottom: 30px; }
+    .main__subbox1__subbox2 {
+      width: 50%;
+      display: flex;
+      flex-direction: column; }
+      .main__subbox1__subbox2__subbox1 {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 10px; }
+        .main__subbox1__subbox2__subbox1__prec {
+          font-size: 20px;
+          height: 15%;
+          display: flex; }
+        .main__subbox1__subbox2__subbox1__hum {
+          font-size: 20px;
+          height: 15%; }
+        .main__subbox1__subbox2__subbox1__wind {
+          font-size: 20px;
+          height: 15%; }
+      .main__subbox1__subbox2__subbox2 {
+        height: 50%;
+        display: flex;
+        flex-direction: row; }
+        .main__subbox1__subbox2__subbox2__botonera {
+          height: 20%;
+          width: 75%; }
+          .main__subbox1__subbox2__subbox2__botonera__button {
+            width: 30%;
+            height: 100%;
+            border-radius: 2px;
+            border: 1px solid gray;
+            background-color: #e8ebea; }
+          .main__subbox1__subbox2__subbox2__botonera__button--w {
+            width: 30%;
+            height: 100%;
+            border-radius: 2px;
+            border: 1px solid gray;
+            background-color: #e8ebea; }
+  .main__subbox2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; }
+    .main__subbox2__days {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      height: 60%;
+      width: 11%;
+      background-color: white;
+      align-items: center; }
+      .main__subbox2__days__day {
+        text-align: center;
+        height: 20%; }
+      .main__subbox2__days__photo {
+        height: 60%;
+        -o-object-fit: cover;
+           object-fit: cover; }
+      .main__subbox2__days__degrees {
+        text-align: center;
+        height: 20%; }
+      .main__subbox2__days:hover {
+        background-color: #f5efef;
+        border: 1px solid gray; }
+
+@media only screen and (max-width: 375px) {
+  .main {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    margin: 0; }
+    .main hr {
+      display: block;
+      width: 85%; }
+    .main__subbox1 {
+      flex-direction: column; }
+      .main__subbox1__subbox1 {
+        width: 100%;
+        padding-top: 25px;
+        align-items: center; }
+        .main__subbox1__subbox1__subbox2 {
+          width: 55%; }
+          .main__subbox1__subbox1__subbox2__photo {
+            width: 75%;
+            align-items: center; }
+          .main__subbox1__subbox1__subbox2__degrees {
+            padding-top: 0px;
+            align-items: center; }
+            .main__subbox1__subbox1__subbox2__degrees__unities {
+              padding-bottom: 0px;
+              font-size: 15px;
+              width: 45px;
+              padding-bottom: 30px; }
+      .main__subbox1__subbox2 {
+        width: 100%;
+        height: 100%; }
+        .main__subbox1__subbox2__subbox1 {
+          width: 100%;
+          align-items: center; }
+          .main__subbox1__subbox2__subbox1__prec {
+            height: 25%; }
+          .main__subbox1__subbox2__subbox1__hum {
+            height: 25%; }
+          .main__subbox1__subbox2__subbox1__wind {
+            height: 25%; }
+        .main__subbox1__subbox2__subbox2 {
+          flex-direction: column;
+          width: 100%;
+          align-items: center; }
+          .main__subbox1__subbox2__subbox2__botonera {
+            width: 80%;
+            margin-left: 15px;
+            margin-bottom: 25px; }
+    .main__subbox2 {
+      flex-wrap: wrap; }
+      .main__subbox2__days {
+        height: 50%;
+        width: 25%; } }
+
+
+/*# sourceMappingURL=build.css.map*/
