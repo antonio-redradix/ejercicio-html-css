@@ -1,0 +1,277 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.mainContainer {
+  color: #878787;
+  font-family: "Arial";
+  margin: 0 auto;
+  margin-top: 10%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  height: 350px;
+  width: 650px;
+  display: block;
+  background-color: white; }
+  .mainContainer__section1 {
+    background-color: white;
+    margin: 2% auto;
+    height: 180px;
+    width: 630px; }
+    .mainContainer__section1__container1 {
+      background-color: white;
+      height: 190px;
+      width: 310px;
+      display: inline-block;
+      position: relative; }
+      .mainContainer__section1__container1__text1 {
+        color: #878787;
+        font-size: 15px;
+        height: 80px;
+        width: 150px;
+        line-height: 1.2;
+        position: absolute;
+        top: 0%;
+        margin: 10px 0px 0px 10px;
+        display: block; }
+        .mainContainer__section1__container1__text1__city {
+          font-size: 20px;
+          font-style: bold; }
+      .mainContainer__section1__container1__figure1 {
+        width: 300px;
+        height: 110px;
+        top: 50%;
+        position: absolute;
+        display: inline-block; }
+        .mainContainer__section1__container1__figure1__image {
+          height: 65px;
+          width: 65px;
+          display: inline-block; }
+        .mainContainer__section1__container1__figure1__temperature {
+          color: black;
+          height: 70px;
+          width: 100px;
+          font-size: 60px;
+          display: inline-block;
+          position: absolute;
+          top: 5px;
+          margin-left: 15px; }
+        .mainContainer__section1__container1__figure1__units {
+          display: inline-block;
+          position: absolute;
+          top: 15px;
+          margin-left: 85px; }
+    .mainContainer__section1__container2 {
+      background-color: white;
+      height: 170px;
+      width: 250px;
+      display: inline-block;
+      position: absolute;
+      top: 18%;
+      left: 57%; }
+      .mainContainer__section1__container2__text {
+        margin-top: 10px;
+        line-height: 1.2; }
+      .mainContainer__section1__container2__buttons {
+        margin-top: 20px; }
+      .mainContainer__section1__container2__buttons {
+        float: left;
+        clear: none;
+        display: table; }
+  .mainContainer__section2 {
+    margin: 2% auto;
+    height: 130px;
+    width: 630px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .mainContainer__section2__container1 {
+      height: 95px;
+      width: 75px;
+      font-size: 14px;
+      background-color: white;
+      display: block;
+      justify-content: center; }
+      .mainContainer__section2__container1:hover {
+        background-color: #dddada;
+        border: 1px solid darkgrey;
+        transition: 0.5 s; }
+      .mainContainer__section2__container1__day {
+        text-align: center; }
+      .mainContainer__section2__container1__image {
+        display: block;
+        margin: 0 auto; }
+      .mainContainer__section2__container1__grades {
+        display: inline-block;
+        font-size: 14px;
+        width: 70px;
+        text-align: center; }
+        .mainContainer__section2__container1__grades__grades1 {
+          color: #9C9C9C;
+          display: inline-block; }
+        .mainContainer__section2__container1__grades__grades2 {
+          color: #9C9C9C;
+          display: inline-block; }
+
+@media only screen and (max-width: 375px) {
+  .mainContainer {
+    color: #878787;
+    font-family: "Arial";
+    height: 667px;
+    width: 375px;
+    display: block;
+    background-color: white;
+    border-radius: none;
+    border: none; }
+    .mainContainer__section1 {
+      background-color: white;
+      margin: 5% auto;
+      height: 500px;
+      width: 375px; }
+      .mainContainer__section1__container1 {
+        background-color: white;
+        height: 160px;
+        width: 375px;
+        position: relative;
+        border-bottom: 1px solid black; }
+        .mainContainer__section1__container1__text1 {
+          color: #878787;
+          font-size: 15px;
+          height: 0px;
+          width: 375px;
+          line-height: 1.2;
+          position: absolute;
+          top: 0%;
+          display: block;
+          text-align: center; }
+          .mainContainer__section1__container1__text1__city {
+            font-size: 20px;
+            font-style: bold; }
+        .mainContainer__section1__container1__figure1 {
+          margin: 50px;
+          width: 300px;
+          height: 130px;
+          top: 30px;
+          left: 35px; }
+          .mainContainer__section1__container1__figure1__image {
+            height: 65px;
+            width: 65px; }
+          .mainContainer__section1__container1__figure1__temperature {
+            color: black;
+            height: 70px;
+            width: 100px;
+            font-size: 60px;
+            display: inline-block;
+            position: absolute;
+            top: 5px;
+            margin-left: 15px; }
+          .mainContainer__section1__container1__figure1__units {
+            display: inline-block;
+            position: absolute;
+            top: 15px;
+            margin-left: 85px; }
+      .mainContainer__section1__container2 {
+        background-color: white;
+        height: 120px;
+        width: 235px;
+        margin: 0 auto;
+        left: 0%;
+        top: 30%;
+        border-bottom: 1px solid black;
+        padding: 5% 20%; }
+        .mainContainer__section1__container2__text {
+          width: 200px;
+          margin-top: 10px;
+          line-height: 1.2;
+          margin-left: 55px; }
+        .mainContainer__section1__container2__buttons {
+          margin-top: 20px; }
+        .mainContainer__section1__container2__buttons {
+          float: left;
+          clear: none;
+          display: table; }
+    .mainContainer__section2 {
+      margin: 5% auto;
+      height: 200px;
+      width: 370px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      top: 60%;
+      position: absolute; }
+      .mainContainer__section2__container1 {
+        height: 100px;
+        width: 75px;
+        font-size: 14px;
+        background-color: white;
+        display: block;
+        justify-content: center; }
+        .mainContainer__section2__container1:hover {
+          background-color: #dddada;
+          border: 1px solid darkgrey;
+          transition: 0.5 s; }
+        .mainContainer__section2__container1__day {
+          text-align: center; }
+        .mainContainer__section2__container1__image {
+          display: block;
+          margin: 0 auto; }
+        .mainContainer__section2__container1__grades {
+          display: inline-block;
+          font-size: 14px;
+          width: 70px;
+          text-align: center; }
+          .mainContainer__section2__container1__grades__grades1 {
+            color: #9C9C9C;
+            display: inline-block; }
+          .mainContainer__section2__container1__grades__grades2 {
+            color: #9C9C9C;
+            display: inline-block; } }
+
+
+/*# sourceMappingURL=build.css.map*/
