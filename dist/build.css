@@ -86,11 +86,15 @@ table {
       align-items: center;
       padding-top: 10px;
       color: #878787;
+      transition: border 1s;
+      transition: background-color 1s;
       border-collapse: collapse;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      border: white 0.5px solid; }
     .weatherBoard__NextDays__DayCard:hover {
-      border: #bdb8b8 0.5px solid;
-      background-color: #FCFCFC; }
+      transition: all 1s;
+      border: #c2bebe 0.5px solid;
+      background-color: #e7e0e0; }
 
 @media only screen and (max-width: 375px) {
   .SingleDayWeather {

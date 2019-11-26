@@ -45,14 +45,17 @@ $desktop: 600px;
         align-items: center;
         padding-top: 10px;
         color: #878787;
+        transition: border 1s;
+        transition: background-color 1s;
         border-collapse: collapse;
         box-sizing: border-box;
+        border: white 0.5px solid;
       }
 
       &__DayCard:hover{
-        
-        border: rgb(189, 184, 184) 0.5px solid;
-        background-color: #FCFCFC;
+        transition: all 1s;        
+        border: rgb(194, 190, 190) 0.5px solid;
+        background-color: rgb(231, 224, 224);        
       }
 
     }
@@ -110,7 +113,7 @@ $desktop: 600px;
       width: 55%;
       height: 100%;
     }
-    
+
     &__Temperature{
       @media only screen and(min-width:$desktop){
         padding-left: 15px;
