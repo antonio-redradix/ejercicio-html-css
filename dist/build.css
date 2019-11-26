@@ -204,17 +204,32 @@ body {
       justify-content: center;
       align-items: center; }
       .dayInfo__main--top {
-        width: 40%; }
+        width: 35%;
+        height: 60%; }
       .dayInfo__main--bottom {
+        width: 100%;
+        height: 40%;
         display: flex;
         justify-content: center;
-        width: 100%;
-        padding: 20px; }
+        align-items: center; }
         .dayInfo__main--bottom--left {
-          height: 150%; }
+          display: flex;
+          justify-content: flex-end;
+          height: 150%;
+          width: 50%;
+          height: 100%; }
           .dayInfo__main--bottom--left__img {
             width: auto;
             height: 100%; }
+        .dayInfo__main--bottom--right {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center; }
+          .dayInfo__main--bottom--right__symbol {
+            display: flex;
+            align-self: flex-start; }
     .dayInfo__secundary {
       display: flex;
       flex-direction: column;
@@ -234,11 +249,13 @@ body {
         flex-direction: column;
         align-items: center; }
       .dayInfo__secundary__table {
-        width: 60%;
+        width: 80%;
         margin: 0; }
   .weekInfo {
     width: 100%;
-    height: 50%; }
+    height: 40%;
+    align-items: space-between;
+    margin-top: 20px; }
     .weekInfo__dayBox {
       align-content: center;
       height: auto; } }
