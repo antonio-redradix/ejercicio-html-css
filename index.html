@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./dist/build.css"></link>
+</head>
+<body>
+    <section class="weatherBoard">
+
+        <div class="SingleDayWeather">
+            <div class="SingleDayWeather__DayInfo">
+
+                <div class="SingleDayWeather__Text">
+                    <h1>Madrid</h1>
+                    <span>Sunday 08:00</span>
+                    <span>Mostly Cloudly</span>
+                </div>
+
+                <div class="SingleDayWeather__DayInfo__Temperature">
+                    <img src="./imagenes/partly_cloudy.png" alt="">
+                    <span class="Degrees">13</span>
+                    <div class="Degrees--Unit">
+                        ºC |
+                        <a href="#">ºF</a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="SingleDayWeather__WeatherInfo">
+
+                    <div class="SingleDayWeather__Text">
+                            <span>Precipitation: 6%</span>
+                            <span>Humidity: 83%</span>
+                            <span>Wind: 31km/h</span>
+                    </div>
+
+                    <div class="SingleDayWeather__WeatherInfo__Options">
+                        <input type="button" value="Temperature">
+                        <input type="button" value="Precipitation">
+                        <input type="button" value="Wind">
+                    </div>
+            </div>
+        </div>
+
+        <div class="weatherBoard__NextDays">
+            <div class="weatherBoard__NextDays__DayCard">
+                <span>Sun</span>
+                <img src="./imagenes/partly_cloudy.png" alt="">
+                <div>
+                    <span class="Degrees--Little--Top">16º</span>
+                    <span class="Degrees--Little--Low">11º</span>
+                </div>
+            </div>
+            <div class="weatherBoard__NextDays__DayCard">
+                    <span>Mon</span>
+                    <img src="./imagenes/rain_s_cloudy.png" alt="">
+                    <div>
+                        <span class="Degrees--Little--Top">16º</span>
+                        <span class="Degrees--Little--Low">7º</span>
+                    </div>
+            </div>
+            <div class="weatherBoard__NextDays__DayCard">
+                    <span>Tue</span>
+                    <img src="./imagenes/partly_cloudy.png" alt="">
+                    <div>
+                        <span class="Degrees--Little--Top">14º</span>
+                        <span class="Degrees--Little--Low">5º</span>
+                    </div>
+            </div>
+            <div class="weatherBoard__NextDays__DayCard">
+                    <span>Wed</span>
+                    <img src="./imagenes/partly_cloudy.png" alt="">
+                    <div>
+                        <span class="Degrees--Little--Top">14º</span>
+                        <span class="Degrees--Little--Low">5º</span>
+                    </div>
+            </div>
+            <div class="weatherBoard__NextDays__DayCard">
+                    <span>Thu</span>
+                    <img src="./imagenes/rain_s_cloudy.png" alt="">
+                    <div>
+                        <span class="Degrees--Little--Top">14º</span>
+                        <span class="Degrees--Little--Low">3º</span>
+                    </div>
+            </div>
+            <div class="weatherBoard__NextDays__DayCard">
+                    <span>Fri</span>
+                    <img src="./imagenes/partly_cloudy.png" alt="">
+                    <div>
+                        <span class="Degrees--Little--Top">12º</span>
+                        <span class="Degrees--Little--Low">4º</span>
+                    </div>
+            </div>
+            <div class="weatherBoard__NextDays__DayCard">
+                    <span>Sat</span>
+                    <img src="./imagenes/partly_cloudy.png" alt="">
+                    <div>
+                        <span class="Degrees--Little--Top">13º</span>
+                        <span class="Degrees--Little--Low">6º</span>
+                    </div>
+            </div>
+            <div class="weatherBoard__NextDays__DayCard">
+                    <span>Sun</span>
+                    <img src="./imagenes/rain_s_cloudy.png" alt="">
+                    <div>
+                        <span class="Degrees--Little--Top">12º</span>
+                        <span class="Degrees--Little--Low">4º</span>
+                    </div>
+            </div>                      
+        </div>
+
+    </section>
+    <script src="./dist/build.js"></script>
+</body>
+</html>

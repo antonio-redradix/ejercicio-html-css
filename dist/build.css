@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.weatherBoard {
+  box-sizing: border-box;
+  font-family: sans-serif; }
+  @media only screen and (max-width: 375px) {
+    .weatherBoard {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
+  @media only screen and (min-width: 600px) {
+    .weatherBoard {
+      margin: 100px;
+      width: 651px;
+      height: 370px;
+      border-radius: 8px;
+      border: #bdb8b8 1px solid;
+      box-sizing: border-box; } }
+  .weatherBoard__NextDays {
+    width: 100%;
+    height: 30%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (max-width: 375px) {
+      .weatherBoard__NextDays {
+        border-top: black 1px solid;
+        flex-wrap: wrap;
+        width: 80%;
+        height: auto;
+        padding-top: 15px; } }
+    .weatherBoard__NextDays__DayCard {
+      width: 75px;
+      height: 90px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10px;
+      color: #878787;
+      border-collapse: collapse;
+      box-sizing: border-box; }
+    .weatherBoard__NextDays__DayCard:hover {
+      border: #bdb8b8 0.5px solid;
+      background-color: #FCFCFC; }
+
+@media only screen and (max-width: 375px) {
+  .SingleDayWeather {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+@media only screen and (min-width: 600px) {
+  .SingleDayWeather {
+    width: 100%;
+    height: 70%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row; } }
+
+.SingleDayWeather__Text {
+  width: 100%;
+  height: 40%;
+  color: #878787;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-top: 25px;
+  line-height: 20px;
+  font-size: 18px; }
+  @media only screen and (max-width: 375px) {
+    .SingleDayWeather__Text {
+      width: auto;
+      height: 80px; } }
+  @media only screen and (min-width: 600px) {
+    .SingleDayWeather__Text {
+      width: 100%;
+      height: 40%; } }
+  .SingleDayWeather__Text h1 {
+    font-size: 28px;
+    line-height: 30px; }
+
+@media only screen and (max-width: 375px) {
+  .SingleDayWeather__DayInfo {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px; } }
+
+@media only screen and (min-width: 600px) {
+  .SingleDayWeather__DayInfo {
+    width: 60%;
+    height: 100%; } }
+
+.SingleDayWeather__DayInfo__Temperature {
+  display: flex; }
+  @media only screen and (min-width: 600px) {
+    .SingleDayWeather__DayInfo__Temperature {
+      padding-left: 15px; } }
+  .SingleDayWeather__DayInfo__Temperature img {
+    height: 70px; }
+  .SingleDayWeather__DayInfo__Temperature span {
+    font-size: 65px; }
+
+.SingleDayWeather__WeatherInfo {
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (max-width: 375px) {
+    .SingleDayWeather__WeatherInfo {
+      width: 80%;
+      height: auto;
+      border-top: black 1px solid;
+      align-items: center; } }
+  @media only screen and (min-width: 600px) {
+    .SingleDayWeather__WeatherInfo {
+      width: 40%;
+      height: 100%; } }
+  .SingleDayWeather__WeatherInfo__Options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    @media only screen and (max-width: 375px) {
+      .SingleDayWeather__WeatherInfo__Options {
+        height: 50px; } }
+    .SingleDayWeather__WeatherInfo__Options input {
+      border-radius: 0px;
+      font-weight: bold;
+      height: 30px;
+      background-color: #FCFCFC; }
+    .SingleDayWeather__WeatherInfo__Options input:focus {
+      background-color: #EBEBEB;
+      border: #bdb8b8 0.5px solid; }
+
+.Degrees {
+  font-size: 65px; }
+
+.Degrees--Little {
+  font-size: 12px; }
+
+.Degrees--Little--Top {
+  color: #878787; }
+
+.Degrees--Little--Low {
+  color: #D2D2D2; }
+
+.Degrees--Unit {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  margin-top: 6px; }
+  .Degrees--Unit a {
+    text-decoration: none; }
+
+
+/*# sourceMappingURL=build.css.map*/
