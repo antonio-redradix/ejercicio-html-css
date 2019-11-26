@@ -5,6 +5,7 @@ hr.style1{
 	margin: 0px;
 	margin-top: 5%;
 	with: 100%;
+	display: none;
 }
 
 .weather{
@@ -12,17 +13,17 @@ hr.style1{
 	margin-left: 10%;
 	height: 400px;
 	width: 700px;
+	display: flex;
+	flex-flow: row wrap;
+	border: 2px solid #9FB4B1;
+	border-radius: 5px;
 	font-size: 18px;
 	color: #929292;
 	font-family: Arial;
-	border: 2px solid #9FB4B1;
-	border-radius: 5px;
-	display: flex;
-	flex-flow: row wrap;
 	&__up{
-	display: flex;
-	flex-direction: row;
-	width: 100%;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
 		&__mainInfo{
 			height: 60%;
 			width: 50%;
@@ -39,7 +40,7 @@ hr.style1{
 			&__temp{
 				display:flex;
 				align-content: space-around;
-				align-items: center;
+				align-items: flex-start;
 				box-sizing: content-box;
 				margin-top: 10%;
 				margin-left: 5%;
@@ -54,7 +55,7 @@ hr.style1{
 				}
 				&--todayGrades{
 					display:flex;
-					width: 80%;
+					width: auto;
 					font-size: 70px;
 					color: black;
 					& p{
@@ -83,7 +84,7 @@ hr.style1{
 				& button{
 					width: 100%;
 					background-color: #ECECEC;
-					padding: 2%;
+					padding: 3%;
 					border: 1px solid #9FB4B1;
 					&:hover{
 						background-color: #dfdfdf;
@@ -101,35 +102,28 @@ hr.style1{
 			width: 100%;
 			margin: 2%;
 			text-align: center;
-
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
-
 			align-content: space-around;
 			align-items: center;
 			justify-content: space-between;
 			&__element{
 				box-sizing: content-box;
 				align-items: center;
-				
+				padding: 2%;
 				& span {
 					font-weight: bold;
 				}
 				& img{
 					height: auto;
-					width: 100%
+					width: 60%
 				}
 				&:hover{
-					box-sizing: border-box;
 					border: 1px solid #9FB4B1;
-					border-radius: 5px;
 					background-color: #f2f2f2;
-					padding: 1%;
 				}
-				
 			}
-
 		}
 	}
 }
@@ -138,15 +132,16 @@ hr.style1{
 	IPHONE 6/7/8 NORMAL
 */
 @media only screen and (max-width: 375px) {
+	hr.style1{
+		display: block;
+	}
 	.weather{	
 		margin-top: 0%;
 		margin-left: 0%;
 		width: 100vw;
 		height: auto;
 		border: 0px solid #9FB4B1;
-		padding: 10%;
-
-		display: flex;
+		padding: 5%;
 		flex-flow: column wrap;
 		justify-content: center;
 		align-items: center;
@@ -161,14 +156,35 @@ hr.style1{
 				&__title{
 					margin: auto;
 				}
+				&__temp{
+					display: flex;
+					width: auto;
+					justify-content: center;
+					margin-top: 10%;
+					margin-left: 0%;
+					&--todayIcon{
+						display:flex;
+						width:30%;
+						& img {
+							height: auto;
+						}
+					}
+				}
 			}
 			&__secondaryInfo{
 				width: 70%;
 				margin: auto;
+				align-content: center;
 				&__data{
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
+					align-items: center;
+					margin-bottom: 5%;
+				}
+				&__infoButtons{
+					margin: auto;
+					display: flex;
 				}
 			}
 		}
@@ -176,10 +192,8 @@ hr.style1{
 			margin-top: 10%;
 			display: flex;
 			&__prevision{
-
 				&__element{
- 					width: 15%;
- 					margin: 4%;
+ 					width: 20%;
 				}
 			}
 		}
